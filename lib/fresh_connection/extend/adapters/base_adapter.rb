@@ -21,6 +21,7 @@ module FreshConnection
       end
 
       def select_values(*args)
+        puts __replica_spec_name
         __change_connection { super }
       end
 
