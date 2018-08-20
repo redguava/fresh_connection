@@ -20,6 +20,10 @@ module FreshConnection
         __change_connection { super }
       end
 
+      def select_values(*args)
+        __change_connection { super }
+      end
+
       private
 
       def __replica_spec_name
